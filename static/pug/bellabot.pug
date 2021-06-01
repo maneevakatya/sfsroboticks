@@ -1,0 +1,131 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body
+		+header
+		main.main
+			section.bellaintro
+				h1.bellaintro__title Bellabot
+				img(src="./img/bellabot/banner_body.webp").bellaintro__img
+				.bellaintro__text
+					p BellaBot is Pudu’s first full-dimensional sensory delivery robot. It has an extremely cute design and is equipped with innovative multi-modal interaction, which brings human-computer interaction experience one step further and makes delivery become more "friendly" ever since.
+				.bellaintro__video
+					video(controls, poster="./img/bellabot/poster-1.webp")
+						source(src="./img/video/bellabot-1.mp4" type="video/mp4")
+				.bellaintro__video
+					video(controls, poster="./img/bellabot/poster-2.webp")
+						source(src="./img/video/bellabot-2.mp4" type="video/mp4")
+			section.bellapluses
+				.bellapluses__row
+					.bellapluses__item
+						img(src="./img/bellabot/inductiontray.webp").bellapluses__item-img
+						p.bellapluses__item-text Induction tray
+					.bellapluses__item
+						img(src="./img/bellabot/lighteningbutton.webp").bellapluses__item-img
+						p.bellapluses__item-text Lightening Button
+				.bellapluses__row
+					.bellapluses__item
+						img(src="./img/bellabot/quickreleasestructure.webp").bellapluses__item-img
+						p.bellapluses__item-text Quick Release Structure
+					.bellapluses__item
+						img(src="./img/bellabot/powerexchangetechnology.webp").bellapluses__item-img
+						p.bellapluses__item-text Power Exchange Technology
+				.bellapluses__textitem
+					.bellapluses__textitem-left
+						p.bellapluses__textitem-title RGBD
+						.bellapluses__textitem-text
+							p Equipped with multiple Intel RealSense D435 depth cameras, which provide a global shutter sensor and a larger lens for better performance in darkness, it is an excellent solution for robot positioning and navigation, and 3D perception.
+					.bellapluses__textitem-right
+						img(src="./img/bellabot/rgbd.webp").bellapluses__textitem-img
+				.bellapluses__textitem
+					.bellapluses__textitem-left
+						p.bellapluses__textitem-title Independent Linkage<br> Suspension
+						.bellapluses__textitem-text
+							p Equipped with multiple Intel RealSense D435 depth cameras, which provide a global shutter sensor and a larger lens for better performance in darkness, it is an excellent solution for robot positioning and navigation, and 3D perception.
+					.bellapluses__textitem-right
+						img(src="./img/bellabot/independentlinkagesuspension.webp").bellapluses__textitem-img
+			section.bellaalgorithms
+				.bellaalgorithms__item
+					p.bellaalgorithms__title PUDU SLAM
+					.bellaalgorithms__text
+						p PUDU SLAM is a multi-sensor fusion SLAM algorithm independently developed by Pudu. It adopts a combination of various sensors such as vision camera, lidar, IMU, encoder, RGB-D depth camera and ultrasonic radar. It can realize centimeter-level real-time positioning and high-precision map construction. It can also run efficiently in complex and mixed scenarios such as restaurants.
+					.bellaalgorithms__animation
+						video(playsinline, autoplay, loop)
+							source(src="./img/video/bellabot-3.mp4" type="video/mp4")
+				.bellaalgorithms__item
+					p.bellaalgorithms__title 3D Omnidirectional Obstacle Avoidance
+					.bellaalgorithms__text
+						p In pursuit of higher safety, BellaBot is equipped with 3D sensors and a new modular chassis. It can stop at any angle and move away as soon as it encounters obstacles.
+					.bellaalgorithms__animation
+						video(playsinline, autoplay, loop)
+							source(src="./img/video/bellabot-4.mp4" type="video/mp4")
+			section.bellatechinfo
+				.bellatechinfo__item
+					.bellatechinfo__item-left
+						.bellatechinfo__item-info
+							p Minimum height of object detection is <b>20cm</b>
+							p Obstacle detection frequency up to<br> <b>5400 times per minute</b>
+					.bellatechinfo__item-animation
+						video(playsinline, autoplay, loop)
+							source(src="./img/video/bellabot-5.mp4" type="video/mp4")
+				.bellatechinfo__item
+					.bellatechinfo__item-left
+						.bellatechinfo__item-info
+							p Front detection angle up to <b>192.64°</b>
+							p Front obstacle detection range exceeds <b>10m</b>
+					.bellatechinfo__item-animation
+						video(playsinline, autoplay, loop)
+							source(src="./img/video/bellabot-6.mp4" type="video/mp4")
+			section.bellaschedule
+				.bellaschedule__left
+					.bellaschedule__left-container
+						p.bellaschedule__title PUDU SCHEDULER
+						.bellaschedule__text
+							p PUDU SCHEDULER has adopted a decentralized, flexible ad hoc network communication scheme and algorithm architecture. Each robot can directly communicate with any robot in the same network, and quickly calculate and make decisions. Such design reduces the requirements for the network, reduces a central computing node that requires high computing power, and is closer to the interaction mechanism among people
+				.bellaschedule__right
+					img(src="./img/bellabot/bellaschedule.webp").bellaschedule__img
+			section.bellaparameters
+				.bellaparameters__wrapper
+					.bellaparameters__left
+						img(src="./img/bellabot/parameter.webp").bellaparameters__img
+					.bellaparameters__right
+						ul.bellaparameters__list
+							li.bellaparameters__list-item
+								p Machine size&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;516*537*1290mm
+							li.bellaparameters__list-item
+								p Machine weight&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 55k
+							li.bellaparameters__list-item
+								p Machine material&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ABS/aviation-grade aluminum alloy
+							li.bellaparameters__list-item
+								p Charging time&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4.5H
+							li.bellaparameters__list-item
+								p Battery lifetime&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7X24H (power exchangeable
+							li.bellaparameters__list-item
+								p Cruise speed&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.5~1.2m/s adjustable
+							li.bellaparameters__list-item
+								p Single tray load&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10k
+				button(type="button").bellaparameters__contact Contact us now
+			section.bellapacost
+				.bellapacost__left
+					p.bellapacost__title Purchase
+					p.bellapacost__cost A$28,000
+					.bellapacost__info
+						p *1 year warranty
+							br
+							| *Finance option available
+							br
+							| (3 to 5years option / about 4% interest)
+				.bellapacost__right
+					p.bellapacost__title Lease
+					p.bellapacost__cost A$57.70 per day
+					.bellapacost__info
+						p *Minimum 6 months contract 
+							br
+							| *Free warranty for contract period
+							br
+							| *Monthly payment $1,755 (inc. GST)
+							br
+							| *Exchange new robot every 2 years
+		+footer

@@ -1,0 +1,73 @@
+.bellapluses
+	display: flex
+	flex-direction: column
+	background-color: #000000
+	&__row
+		display: flex
+		margin-bottom: 95px
+		&:nth-child(2)
+			.bellapluses__item-text
+				margin-top: 130px
+	&__item
+		width: 50%
+		height: 457px
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__item-img
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__item-text
+		text-shadow: rgba(0,0,0,.3) 0px 5px 0px
+		text-align: center
+		font-size: 34px
+		font: normal normal normal 34px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif
+		line-height: normal
+		letter-spacing: normal
+		font-weight: bold
+		color: #ffffff
+		position: relative
+		z-index: 1
+	&__textitem
+		display: flex
+		min-height: 545px
+		margin-bottom: 86px
+		&:last-child
+			margin-bottom: 16px
+	&__textitem-left
+		width: 50%
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding-left: 120px
+		padding-top: 163px
+	&__textitem-title
+		font-size: 34px
+		font:  normal normal normal 34px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif
+		color: #ffffff
+		text-align: start
+		overflow-wrap: break-word
+		font-weight: bold
+		width: 365px
+		margin-bottom: 24px
+	&__textitem-text
+		font-family: helvetica-w01-light,helvetica-w02-light,sans-serif
+		font-size: 15px
+		color: #ffffff
+		max-width: 306px
+		margin-right: 60px
+		line-height: 19px
+	&__textitem-right
+		width: 50%
+	&__textitem-img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		position: relative
+		right: -35px
