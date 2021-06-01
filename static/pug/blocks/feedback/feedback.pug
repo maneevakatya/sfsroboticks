@@ -1,0 +1,25 @@
+mixin feedback
+	section.feedback
+		.wrapper
+			.feedback__content
+				.feedback__form
+					p.feedback__title Оставить заявку
+					.feedback__row
+						.feedback__field
+							label(for="name").feedback__label Имя
+							input(type="text" placeholder="Имя" id="name").feedback__input
+						.feedback__field
+							label(for="surname").feedback__label Фамилия
+							input(type="text" placeholder="Фамилия" if="surname").feedback__input
+					.feedback__row
+						.feedback__field
+							label(for="email").feedback__label E-mail
+							input(type="text" placeholder="E-mail" id="email").feedback__input
+						.feedback__field
+							label(for="phone").feedback__label Телефон
+							input(type="text" placeholder="Телефон" id="phone").feedback__input
+					.feedback__row
+						.feedback__field
+							label(for="message").feedback__label Комментарий
+							textarea(placeholder="Комментарий" id="message").feedback__input.feedback__input--textarea
+					button.feedback__btn Отправить

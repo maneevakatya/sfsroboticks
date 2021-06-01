@@ -1,0 +1,36 @@
+@mixin desktop
+	@media only screen and (max-width: 1500px) { @content; }
+
+@mixin sdesktop
+	@media only screen and (max-width: 1170px) { @content; }
+
+@mixin pad
+	@media only screen and (max-width: 1023px) { @content; }
+
+@mixin mob
+	@media only screen and (max-width: 767px) { @content; }
+
+@mixin vw($property, $num)
+	#{$property}: ($num * 100 / 1600) + vw;
+
+@mixin gradientAnimation($start, $end, $hover, $transTime, $position, $border-radius, $opacity)
+	background-size: 100%;
+	background: linear-gradient($start, $end);
+	position:  $position;
+	z-index: 100;
+	border-radius: $border-radius;
+	&:before
+		background: linear-gradient($hover, $hover);
+		content: "";
+		display: block;
+		height: 100%;
+		position: absolute;
+		top: 0; left: 0;
+		opacity: 0;
+		width: 100%;
+		z-index: -100;
+		border-radius: $border-radius;
+		transition: opacity $transTime;
+	&:hover
+		&:before
+				opacity: $opacity;
